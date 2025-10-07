@@ -1,3 +1,5 @@
+//This program counts \n, \t and ' '
+
 #include <stdio.h>
 
 #define TAB 9

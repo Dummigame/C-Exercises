@@ -1,3 +1,5 @@
+//Prints Freedom Degrees (Fahrenheit) to Celsius descending from 300F
+
 #include <stdio.h>
 
 #define UPPER 300
@@ -5,7 +7,6 @@
 #define STEP 20
 
 
-/* print Fahrenheit-Celsius table */
 int main(void)
 {
 int fahr;

@@ -1,3 +1,5 @@
+//This program removes consecutive blanks and newlines
+
 #include <stdio.h>
 
 #define TAB 9
