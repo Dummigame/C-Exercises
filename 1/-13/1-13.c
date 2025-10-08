@@ -1,5 +1,5 @@
 //This looks a lot tougher than the last exercise...
-//This program draws a histogram of the frequency of words in its input.
+//This program draws a histogram of the length of words in its input.
 
 #include <stdio.h> //I keep forgetting this
 
@@ -8,7 +8,7 @@
 #define BACKSPACE 8
 #define BACKSLASH 92
 #define SPACE 32
-#define INLEN 37
+#define INLEN 100
 #define PADDING 2
 #define TRUE 1
 #define FALSE 0
@@ -16,7 +16,7 @@
 
 int main(void)
 {
-    char input[INLEN] = "this is some text. is this working?";
+    char input[INLEN] = "lorem ipsum dolor sit amet, I have no idea how this continues or anythingthiswordis long";
     char process[INLEN+1] = "";
 
 
@@ -77,7 +77,25 @@ int main(void)
 
     for(int i = 0; i<=word_count; i++) //Print the histogram
     {
-        printf("Word %d: |", i+1);
+        printf("Word %d", i+1);
+        if(word_count > 9)
+        {
+            if (i+1<10)
+            {
+                printf(" ");
+            }
+        }
+        if(word_count > 99)
+        {
+            if (i+1<100)
+            {
+                printf(" ");
+            }
+        }
+
+        printf(": |");
+
+
 
         for(int i_ = 0; i_<=words_len[i]; i_++)
         {
