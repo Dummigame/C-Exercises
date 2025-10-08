@@ -46,7 +46,7 @@ for (int i = 0; i < INLEN*PADDING; i++)
     }
 }
 
-//This is technically optional, but it cleans up garbage characters after the null terminator of the original string.
+//This is technically optional, but it cleans up garbage characters after the end of the original string.
 //I guess it also works as a failsafe against missing null terminators?
 for (int i = INLEN*PADDING; i>INLEN+added_letters; i--)
 {
